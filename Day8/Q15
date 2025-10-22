@@ -1,0 +1,29 @@
+#include <Stdio.h>
+#include <ctype.h>
+int main ()
+{
+    char c;
+    printf("Enter : ");
+    scanf("%s", &c);
+  
+    if (!(isalpha(c) || isdigit(c)))
+    {
+        printf("Special character");
+    }
+    else if (isalpha(c))
+    {
+        if (isupper(c))
+        {
+            printf("Uppercase alphabet");
+        }
+        else
+        {
+            printf("lowercase alphabet");
+        }
+    }
+    else
+    {
+        printf("Digit");
+    }
+    return 0;
+}
