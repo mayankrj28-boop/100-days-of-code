@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int n, sum = 0;
+    printf("Enter number : ");
+    scanf("%d", &n);
+    int terms = n + n;
+    for (int i = 1; i <= terms ;i+=2)
+    {
+        sum += i;
+    }
+    printf("Sum of odd number till %d is %d ", terms, sum);
+}
