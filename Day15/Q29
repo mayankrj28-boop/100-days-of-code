@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main ()
+{
+    printf("Enter number : ");
+    int num;
+    float fac=1;
+    scanf("%d", &num);
+
+    for (int i = 1; i <= num; i++)
+    {
+        fac = fac * i;
+    }
+    printf("Factorial of %d is %.0f", num, fac);
+}
