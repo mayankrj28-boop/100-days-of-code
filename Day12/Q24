@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    float bill;
+    int units;
+    printf("Enter number of unnits consumed : ");
+    scanf("%d", &units);
+
+    if (units <= 0)
+    {
+        printf("0 Units have been consumed NO BILL");
+        return 0;
+    }
+    else if (units <= 100)
+    {
+        bill = (5 * units);
+    }
+
+    else if (units <= 200)
+    {
+        bill = (5 * 100) + (7 * (units - 100));
+    }
+
+    else if ( units <= 300 )
+    {
+        bill = (5 * 100) + ( 7 * 100 )+ (10 * (units - 200));
+    }
+
+    else
+    {
+        bill = (5 * 100) + (7 * 100) + (10 * 100 ) + (12 * (units - 300));
+    }
+
+    printf("Bill : %.2f Ruppes", bill);
+    return 0;
+}
