@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main()
+{
+
+    printf("Enter number : ");
+    int a, b;
+    scanf("%d", &a);
+    char op;
+    printf("Enter number : ");
+    scanf("%d", &b);
+    printf("Enter operator : ");
+    scanf(" %c", &op);
+
+    switch (op)
+    {
+    case '+':
+        printf("%d", a + b);
+        break;
+    case '-':
+        printf("%d", a - b);
+        break;
+    case '*':
+        printf("%d", a * b);
+        break;
+    case '/':
+        if (b != 0)
+            printf("%d", a / b);
+        else
+            printf("Error: Division by zero");
+        break;
+    case '%':
+        if (b != 0)
+            printf("%d", a % b);
+        else
+            printf("Error: Division by zero");
+        break;
+    default:
+        printf("Invalid operator");
+        break;
+    }
+}
